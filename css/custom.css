@@ -1,0 +1,60 @@
+body {
+    position: relative;
+}
+
+.mainbg {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 10%;
+    background-image: url("../images/mainbg.png");
+    background-size: cover;
+    background-position: bottom 0%;
+}
+
+.mainfg {
+    position: fixed;
+    top: -10%;
+    left: -5%;
+    z-index: 10;
+    opacity: 20%;
+}
+
+.gallery-item-img {}
+
+.copyRight {
+    text-align: center;
+}
+
+@keyframes sway {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(6deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* 將動畫應用到要擺動的樹葉元素 */
+
+.mainfg {
+    animation-name: sway;
+    /* 使用上方定義的 keyframes */
+    animation-duration: 8s;
+    /* 動畫總時間 */
+    animation-timing-function: ease-in-out;
+    /* 動畫加速度曲線 */
+    animation-delay: 0s;
+    /* 延遲時間 */
+    animation-iteration-count: infinite;
+    /* 動畫重複次數 */
+    animation-direction: alternate;
+    /* 動畫往返播放 */
+    transform-origin: left top -100px;
+    /* 變換的原點位置 */
+}
