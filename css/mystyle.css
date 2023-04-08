@@ -70,6 +70,7 @@ mark {
 
 .section-bg {
     padding: 25px 0;
+    overflow: hidden;
     border-top: 3px solid black;
 }
 
@@ -90,7 +91,7 @@ mark {
 
 .image-container {
     overflow: hidden;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 
