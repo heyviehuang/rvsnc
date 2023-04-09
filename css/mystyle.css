@@ -21,10 +21,6 @@ body {
     opacity: 20%;
 }
 
-.copyRight {
-    text-align: center;
-}
-
 @keyframes sway {
     0% {
         transform: rotate(0deg);
@@ -71,7 +67,14 @@ mark {
 .section-bg {
     padding: 25px 0;
     overflow: hidden;
-    border-top: 3px solid black;
+    /* border-top: 3px solid black; */
+}
+
+.titleline {
+    width: 100%;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
 }
 
 .image-container {
@@ -106,4 +109,8 @@ mark {
 .image-container:hover .gallery-img {
     transform: scale(1.05);
     transition: transform 1s ease-in-out;
+}
+
+.copyRight {
+    text-align: center;
 }
